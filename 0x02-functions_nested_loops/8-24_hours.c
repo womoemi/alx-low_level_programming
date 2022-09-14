@@ -3,7 +3,7 @@
 /**
  * jack_bauer - prints 00:00 to 23:59
  *
- * Return: Just prints 
+ * Return: Just prints
  */
 void jack_bauer(void)
 {
