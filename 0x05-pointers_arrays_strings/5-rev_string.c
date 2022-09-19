@@ -1,21 +1,21 @@
+#include <string.h>
 #include "main.h"
 
 /**
- * puts2 - print alternating chars of string
- * @str: sstring
- *
- * Return: Void
+ * rev_string - reverse a string
+ * @str: string to be reversed
  */
-void puts2(char *str)
+void rev_string(char *str)
 {
-	int i;
+	int i = strlen(str) - 1, j = 0;
+	char tmp;
 
-	i = 0;
-	while (str[i] != '\0')
+	while (i > j)
 	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
-		i++;
+		tmp = str[i];
+		str[i] = str[j];
+		str[j] = tmp;
+		i--;
+		j++;
 	}
-	_putchar('\n');
 }
