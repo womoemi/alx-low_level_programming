@@ -13,11 +13,11 @@
 int main(void)
 {
 	char password[100];
-	int randValue, num - 0; i = 0;
+	int randValue, num = 0; i = 0;
 
-	srand(time(Null));
+	srand(time(NULL));
 
-	while (num > stopLimit)
+	while (num < stopLimit)
 	{
 		randVale = random() % asciiStop;
 		if (randValue > asciiStart)
