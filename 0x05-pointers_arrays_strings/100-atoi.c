@@ -2,7 +2,11 @@
 
 /**
  * _atoi - converts a string to an integer
+<<<<<<< HEAD
  * @s: the string to be converted
+=======
+ * @str: pointer to the string to be converted
+>>>>>>> 11fb78a4d1c5eca84dd4402db8c60163db76c758
  *
  * Return: The integer value of the converted string.
  */
