@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - Changes all lowercase letters
-                    of a string to uppercase.
+ *		of a string to uppercase.
  * @n: The string to be changed.
  *
  * Return: A pointer to the changed string.
@@ -18,6 +18,6 @@ char *string_toupper(char *str)
 			str[i] = str[i] - 32;
 		}
 	}
-	
+
 	return (n);
 }
