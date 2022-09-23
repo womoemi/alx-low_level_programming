@@ -1,23 +1,30 @@
 #include "main.h"
-
 /**
- * leet - converts to leet format
- * @s: string to be formatted
- *
- * Return: formmatted string
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer dest.
  */
+
 char *leet(char *s)
 {
-	char options[] = {65,52, 69, 51, 79, 48, 84, 55, 76, 49};
-	int i, j;
+	int count = 0, i;
+	int lower_case[] = {97, 101, 111, 116, 108};
+	int upper_case[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; s[i] != '\0'; i++)
+
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; j < 10; j += 2)
+		for (i = 0; i < 5; i++)
 		{
-			if (a[i] == options[j] || s[i] == options[j] + 32)
-				s[i] = options[j + 1];
+			if (*(s + count) == lower_case[i] || *(s +count) == upper_case[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
 		}
+		count++;
 	}
+
 	return (s);
 }

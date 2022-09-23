@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-/**#print_buffer - prints a buffer 10 bytes at a time, starting with
+/**print_buffer - prints a buffer 10 bytes at a time, starting with
  *                 the byte position, then showing the hex content,
  *                 then displaying printable characters.
  * @b: The buffer to be printed.
@@ -30,7 +30,7 @@ void print_buffer(char *b, int size)
 			if ((index + byte) >= size)
 				break;
 			else if (*(b + index + byte) >= 31 &&
-					*(b + index +byte) <= 126)
+					*(b + index + byte) <= 126)
 				printf("%c", *(b + index byte));
 			else
 				rintf(",");
