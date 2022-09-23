@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
- * leet - Converts to leet format
- * @s: string to be formatted
- *
- * Return: formatted string
+ *rot13 - encodes a string using rot13
+ * @s: input string
+ * Return: the pointer to dest
  */
-char *leet(char *s)
-{
-	char optins[] = {65, 52, 69, 51, 79, 48, 84, 55, 76, 49};
-	int i, j;
 
-	for (i = 0; s[i] != '\0'; i++)
+char *rot13(char *s)
+{
+	int count = 0, i;
+	char alphabeth[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvxwyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; j < 10; j += 2)
+		for (i = 0; i < 52; i++)
 		{
-			if (s[i] == optins[j] || s[i] == options[j] + 32)
-				s[i] = options[j + 1];
+			if (*(s + count) == alphabeth[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
 		}
+		count++;
 	}
+
 	return (s);
 }
