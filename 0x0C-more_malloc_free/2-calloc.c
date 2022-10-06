@@ -11,9 +11,9 @@
  *         otherwise - a pointer to the allocated memory.
  */
 
-void *_calloc(unsigned int nmembb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	viod *mem;
+	void *mem;
 	char *filler;
 	unsigned int index;
 
