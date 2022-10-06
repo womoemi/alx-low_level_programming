@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmembb, unsigned int size)
 	viod *mem;
 	char *filler;
 	unsigned int index;
-	
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
