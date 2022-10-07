@@ -14,7 +14,6 @@ void add_nums(char *final_prod, char *next_prod, int next_len);
  * @l: size of string
  *
  * Return: void
- *
  */
 
 void _print(char *str, int l)
@@ -28,7 +27,7 @@ void _print(char *str, int l)
 			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
-		i++
+		i++;
 	}
 
 	_putchar('\n');
