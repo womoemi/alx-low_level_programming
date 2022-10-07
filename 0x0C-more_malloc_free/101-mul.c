@@ -20,7 +20,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len);
 void _print(char *str, int l)
 {
 	int i, j;
-	
+
 	i = j = 0;
 	while (i < l)
 	{
