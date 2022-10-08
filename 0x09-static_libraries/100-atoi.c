@@ -1,4 +1,4 @@
-int _atoi(char *s);
+int _atoi(char *s)
 {
 	return (0);
 }
