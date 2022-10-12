@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * print_nmae - prints a name
+ * print_name - prints a name
  * @name: This is the name to be printed
  * @f: This is a pointer to a func
  *
