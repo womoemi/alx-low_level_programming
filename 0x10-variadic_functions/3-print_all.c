@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	const char fmt[] = "cifs";
 
 	va_start(ap, format);
-	while (formt && format[i])
+	while (format && format[i])
 	{
 		j = 0;
 		while (fmt[j])
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 		case 'c':
-			printf("%f", va_arg(ap, int)), c = 1;
+			printf("%c", va_arg(ap, int)), c = 1;
 			break;
 		case 'i':
 			printf("%i", va_arg(ap, int)), c = 1;
