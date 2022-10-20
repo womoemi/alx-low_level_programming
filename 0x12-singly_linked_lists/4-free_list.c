@@ -28,7 +28,8 @@ void free_list(list_t *head)
 	{
 		free(node->str);
 		free(node);
-		node = forward->next != NULL)
+		node = forward;
+		if (forward->next != NULL)
 			forward = forward->next;
 		else
 		{
